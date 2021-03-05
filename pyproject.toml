@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pdp"
+version = "0.1.0"
+description = ""
+authors = ["Edinho"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Scrapy = "^2.4.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+black = "^20.8b1"
+flake8-black = "^0.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
