@@ -63,7 +63,9 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 1
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'pdp.pipelines.PdpPipeline': 300,
+    'pdp.pipelines.Check': 100,
+    'pdp.pipelines.IncludeFields': 200,
+    'pdp.pipelines.Save': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
